@@ -16,7 +16,7 @@ public class LC661 {
         }
         return result;
     }
-
+    
     public static int getAverage(int[][] img, int x, int y, int ROW, int COL) {
         int count = 0;
         int sum = 0;
