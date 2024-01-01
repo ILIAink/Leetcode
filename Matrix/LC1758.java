@@ -6,11 +6,10 @@ public class LC1758 {
 
 
         /*
-         * There is two possibilities: 0101... OR 1010... (they are exact opposite)
-         * We are checking where it matches a certain pattern. (in this case 1010...)
-         * Whenever it is different we count UP
-         * Then we check if our count is the highest or 
-         * if the opposite is the highest (s.length - count)
+         * There is two possibilities: 0101... OR 1010... (they are exact opposite). We are checking
+         * where it matches a certain pattern (in this case 1010...). Whenever it is different we
+         * count UP Then we check if our count is the highest, or if the opposite is the highest
+         * (s.length - count)
          */
         for (int i = 0; i < s.length(); i++) {
             if (i % 2 == 0) {
@@ -23,10 +22,10 @@ public class LC1758 {
                 }
             }
         }
-        
+
         // Check if it takes longer to match it to the pattern we're checking for
         // OR the opposite pattern
-        return Math.min(count, s.length()-count);
+        return Math.min(count, s.length() - count);
 
     }
 
